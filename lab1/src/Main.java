@@ -8,9 +8,9 @@ public class Main {
         if(args.length < 2)
             throw new Exception("Invalid input format: not enough arguments");
 
-        String hashType = args[0];
+        String flag = args[0];
 
-        switch(hashType) {            
+        switch(flag) {            
             case "-i":
                 if (args.length != 2)
                     throw new Exception("Invalid input format: not enough arguments");
