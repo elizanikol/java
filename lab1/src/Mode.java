@@ -9,14 +9,16 @@ public abstract class Mode {
 
     public void md5Hash(String fileName) {
         if  (readFile(fileName) == null);
-        else
+        else {
             System.out.println("Hash code using md5Hex: " + DigestUtils.md5Hex(readFile(fileName)));
+        }
     }
 
     public void sha256Hash(String fileName) {
         if  (readFile(fileName) == null);
-        else
+        else {
             System.out.println("Hash code using sha256Hex: " + DigestUtils.sha256Hex(readFile(fileName)));
+        }
     }
 
     public String readFile(String fileName) {
