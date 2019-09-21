@@ -7,9 +7,12 @@ public class Interactive extends Mode {
 
     @Override
     public void calcHash() {
-        System.out.println("For file: " + fileName_);
-        md5Hash(fileName_);
-        sha256Hash(fileName_);
+        if (readFile(fileName_) == null);
+        else {
+            System.out.println("For file: " + fileName_);
+            md5Hash(fileName_);
+            sha256Hash(fileName_);
+        }
     }
 
     public void menu() {     
