@@ -4,10 +4,6 @@ import java.util.Scanner;
 public class Interactive extends Mode {
     
     private String fileName_;
-    
-    public Interactive(String fileName) {
-        this.fileName_ = fileName;
-    }
 
     @Override
     public void calcHash() {
@@ -18,12 +14,13 @@ public class Interactive extends Mode {
 
     public void menu() {     
         loop_: while (true) {   
-            System.out.println("To calculate hash of another file press 1, to exit press 0");
+            System.out.println("To calculate hash of a new file press 1, to exit press 0");
             try {
                 byte x = new Scanner(System.in).nextByte();
 
                 switch(x) {
                     case 1: 
+                        System.out.println("Enter the file path");
                         fileName_ = new Scanner(System.in).nextLine();
                         calcHash();
                         break;
