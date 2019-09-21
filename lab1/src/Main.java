@@ -5,19 +5,18 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         
-        if (args.length < 2) {
+        if (args.length == 0) {
             throw new Exception("Invalid input format: not enough arguments");
         }
         
         String flag = args[0];
 
-        switch(flag) {            
+        switch(flag) { 
             case "-i":
-                if (args.length != 2) {
+                if (args.length != 1) {
                     throw new Exception("Invalid input format: not enough arguments");
                 }
-                Interactive interMode = new Interactive(args[1]);
-                interMode.calcHash();
+                Interactive interMode = new Interactive();
                 interMode.menu();           
                 break;
 
