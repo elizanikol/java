@@ -1,4 +1,4 @@
-# Web app to check sum calculation 
+# Web app for checking sum calculation 
 
 ## Description:
 Web application to check correctness of the calculated sum of two auto generated integers in range from -125 to 347.
