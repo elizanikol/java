@@ -29,7 +29,7 @@ public class Servlet extends javax.servlet.http.HttpServlet {
                 sessionIds.add(sessionId);
                 Cookie cookie = new Cookie("sessionId", sessionId);
                 response.addCookie(cookie);
-                request.getRequestDispatcher("/hello_inside.jsp").forward(request, response);
+                response.sendRedirect("/webappSumCheck_war_exploded/hello_inside.jsp");
             }
         }
         else {
