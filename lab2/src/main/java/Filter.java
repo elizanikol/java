@@ -26,10 +26,12 @@ public class Filter implements javax.servlet.Filter {
 
         Cookie[] cookies = request.getCookies();
 
-        if (cookies != null) {
-            for (Cookie cookie : cookies) {
-                if (cookie.getName().equals("sessionId") && sessionIds.contains(cookie.getValue())) {
-                    request.getRequestDispatcher("/hello_inside.jsp").forward(request, response);
+        if (!sessionIds.isEmpty()) {
+            if (cookies != null) {
+                for (Cookie cookie : cookies) {
+                    if (cookie.getName().equals("sessionId") && sessionIds.contains(cookie.getValue())) {
+                        request.getRequestDispatcher("/hello_inside.jsp").forward(request, response);
+                    }
                 }
             }
         }
