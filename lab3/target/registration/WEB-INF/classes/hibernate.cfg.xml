@@ -7,9 +7,9 @@
         <property name="connection.url">jdbc:postgresql://localhost:5432/postgres</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <mapping resource="PasswordEntity.hbm.xml"/>
-        <mapping class="Entity.PasswordEntity"/>
+        <mapping class="entities.PasswordEntity"/>
         <mapping resource="HashEntity.hbm.xml"/>
-        <mapping class="Entity.HashEntity"/>
+        <mapping class="entities.HashEntity"/>
     </session-factory>
 </hibernate-configuration>
 

@@ -1,6 +1,6 @@
 package DAO;
 
-import Entity.HashEntity;
+import entities.HashEntity;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import util.HibernateUtil;

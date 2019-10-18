@@ -1,6 +1,6 @@
 package DAO;
 
-import Entity.PasswordEntity;
+import entities.PasswordEntity;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import util.HibernateUtil;

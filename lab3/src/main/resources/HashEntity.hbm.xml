@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="Entity.HashEntity" table="user_hashes" schema="public" catalog="postgres">
+    <class name="entities.HashEntity" table="user_hashes" schema="public" catalog="postgres">
         <id name="userId">
             <column name="user_id" sql-type="int"/>
         </id>

@@ -6,7 +6,7 @@
 
   <filter>
     <filter-name>Filter</filter-name>
-    <filter-class>filters.Filter</filter-class>
+    <filter-class>filter.Filter</filter-class>
   </filter>
   <filter-mapping>
     <filter-name>Filter</filter-name>

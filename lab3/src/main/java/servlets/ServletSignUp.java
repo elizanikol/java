@@ -2,8 +2,8 @@ package servlets;
 
 import DAO.DAOhash;
 import DAO.DAOpassword;
-import Entity.HashEntity;
-import Entity.PasswordEntity;
+import entities.HashEntity;
+import entities.PasswordEntity;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

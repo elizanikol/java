@@ -1,4 +1,4 @@
-package filters;
+package filter;
 
 import DAO.DAOhash;
 import javax.servlet.*;
